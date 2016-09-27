@@ -5,7 +5,7 @@ module.exports = {
     development: {
         db: 'mongodb://admin:pass@ds061691.mlab.com:61691/global-wish-list',
         rootPath: rootPath,
-        port: process.env.PORT || 3030
+        port: process.env.PORT || 3031
     },
     production: {
         rootPath: rootPath,

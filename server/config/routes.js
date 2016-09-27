@@ -20,7 +20,9 @@ module.exports = function (app) {
 
     //app.get('/api/wishs', wishs.getWishs);
 
-    app.post('/login', auth.authenticate);
+    app.post('/login', function(req, res, next){
+        auth.authenticate(req, res, next);
+    });
 
     app.post('/logout', function (req, res) {
         req.logout();
