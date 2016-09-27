@@ -8,6 +8,6 @@ node index.js
 ```
 
 ## Endpoints
-> * `/api/users`
-> * `/login/`
-> * `/logout`
+* `/api/users`
+* `/login/`
+* `/logout`
