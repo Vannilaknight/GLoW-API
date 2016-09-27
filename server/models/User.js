@@ -31,7 +31,7 @@ function createDefaultUsers() {
         if (collection.length === 0) {
             var salt, hash;
             salt = encrypt.createSalt();
-            hash = encrypt.hashPwd(salt, 'sonic365');
+            hash = encrypt.hashPwd(salt, 'password');
             User.create({
                 firstName: 'Taylor',
                 lastName: 'Boyd',
@@ -42,7 +42,7 @@ function createDefaultUsers() {
                 roles: ['admin']
             });
             salt = encrypt.createSalt();
-            hash = encrypt.hashPwd(salt, 'sonic365');
+            hash = encrypt.hashPwd(salt, 'password');
             User.create({
                 firstName: 'Taylor',
                 lastName: 'Boyd',
