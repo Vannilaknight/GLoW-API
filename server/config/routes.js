@@ -10,6 +10,10 @@ module.exports = function (app) {
         next();
     });
 
+    app.get('health', function (req, res) {
+       res.sendStatus(200)
+    });
+
     app.get('/api/users',
         // auth.requiresRole('admin'),
         users.getUsers);
